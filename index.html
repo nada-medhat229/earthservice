@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>earth services</title>
+  <link rel="icon" href="images/logo.png">
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- fancyBox link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+  <!-- owl-carousel link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- aos link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- custom css AR file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <!---loader---->
+  <div class="loader">
+    <div
+      class="loader-con d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="text-center">
+        <img
+          src="./images/load.png"
+          id="spin-animation"
+          alt=""
+          data-aos="zoom-out-left"
+          data-aos-duration="600"
+        />
+        <div
+          class="contain text-center"
+          data-aos="zoom-in-right"
+          data-aos-duration="800"
+          data-aos-delay="800"
+        >
+          <h4 class="text-center py-2">Earth Services</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end loader-->
+<!------------- nav section --------------> 
+<!-- nav @ max width 992 -->
+  <!-- if auth -->
+    <div class="min-nav col-xs-12">
+      <a class="" href="profile.html">
+        <i class="bi bi-person"></i>
+      </a>
+      <a id="notif" class="" href="notif.html">
+        <i class="bi bi-bell"></i>
+        <span class="count">0</span>
+      </a>
+      <a class="" href="cart.html">
+        <i class="bi bi-cart"></i>
+        <span class="count">1</span>
+      </a>
+    </div>
+  <!-- else -->
+  <div class="min-nav d-none col-xs-12">
+    <a class="" href="login.html">
+       تسجيل دخول
+    </a>
+    <a class="" href="notif.html">
+      انشاء حساب
+    </a>
+  </div>
+
+<!-- nav @ min width 992 "large screen" -->
+<nav class="navbar navbar-expand-lg navbar-light top-0" data-aos="fade-left" data-aos-duration="800">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      </span>
+    </button>
+    <a class="navbar-brand m-0" href="index.html"><img src="images/logo.png" alt=""></a>
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutUs.html" class="nav-link">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link">الخدمات</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            المعرض
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+            <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">المدونة</a>
+        </li>
+        <li class="nav-item">
+          <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+        </li>
+      </ul> 
+    </div>
+    <!-- if Auth -->
+    <div class="icons show-lg">
+      <div class="icon">
+        <a href="profile.html">
+          <i class="bi bi-person"></i>
+        </a>
+      </div>
+      <div id="notif" class="icon has-menu">
+        <a href="notif.html">
+          <i class="bi bi-bell"></i>
+        </a>
+        <div class="sub-menu">
+          <div class="notification">
+            <div class="notifi row gx-0 justify-content-between align-items-center">
+              <a class="link" href="notif.html"></a>
+              <p class="cut-text px-3">
+                وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+              </p>
+            </div>
+            <div class="notifi row gx-0 justify-content-between align-items-center">
+              <a class="link" href="notif.html"></a>
+              <p class="cut-text px-3">
+                وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+              </p>
+            </div>
+          </div>
+        </div>
+        <span class="count">1</span>
+      </div>
+      <div class="icon">
+        <a href="cart.html">
+          <i class="bi bi-cart"></i>
+        </a>
+        <span class="count">1</span>
+      </div>
+    </div>
+    
+    <!-- else -->
+    <div class="login d-none show-lg">
+      <a class="" href="">تسجيل دخول</a>
+      <a class="btn rounded-pill m-0 main-btn" href="">انشاء حساب</a>
+    </div>
+  </div>
+</nav>
+
+<!------------- header section -------------->
+<header id="header">
+  <div class="container">
+    <div class="head" style="background-image: url(./images/home-1.png);">
+      <div class="overlay"></div>
+      <div class="head-content" >
+        <div class="head-text" data-aos="flip-up" data-aos-duration="800" data-aos-delay="300">
+          <h4 class="heading mb-5 m-auto fw-bold">أفضل الخدمات لأفضل استخدام</h4>
+          <!-- slider text -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</p>
+              </div>
+              <div class="carousel-item">
+                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</p>
+              </div>
+              <div class="carousel-item">
+                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</p>
+              </div>
+              <div class="carousel-item">
+                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search position-relative w-75 m-0 m-auto">
+          <form action="\">
+            <input class="form-control m-0 rounded-pill" type="search" name="" id="" placeholder="ابحث عن الخدمة التي تريدها">
+            <button type="submit" class="srch-i">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> 
+</header>
+
+<!------------- services-steps section -------------->
+<section class="how-us">
+  <div class="container">
+    <div class="title-container text-center">
+      <h5 class="title fs-3 fw-bold">طريقة حجز الخدمه</h5>
+      <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+    </div>
+    <div
+      class="contant row justify-content-between align-items-center text-center"
+    >
+      <div class="col-3 col-lg-auto mt-5" data-aos="fade-down-left" data-aos-duration="600">
+        <img src="./images/icon-1.png" class="image mb-4" alt="" />
+
+        <h6>انشاء حساب</h6>
+      </div>
+      <div
+        class="icon col d-lg-flex d-none justify-content-between align-items-center p-0"
+      >
+        <i class="bi bi-circle-fill" style="color: #ffc72c"></i>
+        <div style="border-bottom: 1px dashed #ccc; width:100%"></div>
+        <i class="bi bi-circle-fill" style="color: #0070aa"></i>
+      </div>
+      <div class="col-3 col-lg-auto mt-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="200">
+        <img src="./images/icon-2.png" class="image mb-4" alt="" />
+        <h6>اختر الخدمة</h6>
+      </div>
+      <div
+        class="icon col d-lg-flex d-none justify-content-between align-items-center p-0"
+      >
+        <i class="bi bi-circle-fill" style="color: #0070aa"></i>
+        <div style="border-bottom: 1px dashed #ccc; width:100%"></div>
+        <i class="bi bi-circle-fill" style="color: #82e89c"></i>
+      </div>
+      <div class="col-3 col-lg-auto mt-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="400">
+        <img src="./images/icon-3.png" class="image mb-4" alt="" />
+        <h6>اختر المركز</h6>
+      </div>
+      <div
+        class="icon col d-lg-flex d-none justify-content-between align-items-center p-0"
+      >
+        <i class="bi bi-circle-fill" style="color: #82e89c"></i>
+        <div style="border-bottom: 1px dashed #ccc; width:100%"></div>
+        <i class="bi bi-circle-fill" style="color: #6246e5"></i>
+      </div>
+      <div class="col-3 col-lg-auto mt-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="600">
+        <img src="./images/icon-4.png" class="image mb-4" alt="" />
+        <h6>حجز الخدمة</h6>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!------------- getService section -------------->
+<section class="getService bg-white" >
+  <div class="container py-5">
+    <div class="row gx-5 gy-5 align-items-center justify-content-between h-100">
+      <div class="col-auto col-lg-6 h-100 px-5"  data-aos="zoom-in" data-aos-duration="800">
+        <div class="container">
+          <div class="getService-img position-relative" style="transform: translate(50px, 0px);">
+            <div class="padge-y start-100 ">نسعي دائماً لخدماتك</div>
+            <div class="padge-g start-0 translate-middle">بالشكل الذي يليق بك</div>
+            <img src="images/about.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6" data-aos="fade-up-right" data-aos-duration="700" data-aos-delay="200">
+        <h4 class="heading mb-4 fw-bold">اسهل طريقه للحصول علي جميع خدماتك</h4>
+        <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.</p>
+
+        <ul class="mx-4 mb-5">
+          <li>
+            <span> وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </span>
+          </li>
+          <li>
+            <span> وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </span>
+          </li>
+          <li>
+            <span> وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </span>
+          </li>
+        </ul>
+        <a class="btn rounded-pill m-0 main-btn px-5" href="services.html" data-aos="fade-up" data-aos-duration="700">اطلب الان</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------- services section -------------->
+<section class="services py-5 my-5">
+  <div class="container">
+    <div class="title-container text-center">
+      <h5 class="title fs-3 fw-bold">الخدمات</h5>
+      <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+    </div>
+    <ul class="row gy-4">
+      <!-- حضانه -->
+      <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800">
+        <div class="service">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_68098" data-name="Group 68098" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_79_" data-name="svgexport-6 (79)" transform="translate(1675.999 1522)">
+                  <g id="Glyph" transform="translate(0 0)">
+                    <circle id="Ellipse_565" data-name="Ellipse 565" cx="2.354" cy="2.354" r="2.354" transform="translate(28.678)"/>
+                    <circle id="Ellipse_566" data-name="Ellipse 566" cx="1.884" cy="1.884" r="1.884" transform="translate(18.319 3.767)"/>
+                    <circle id="Ellipse_567" data-name="Ellipse 567" cx="2.354" cy="2.354" r="2.354" transform="translate(7.959)"/>
+                    <path id="Path_1264" data-name="Path 1264" d="M20.443,38.51V35H19v2.307Z" transform="translate(-8.177 -17.767)"/>
+                    <path id="Path_1265" data-name="Path 1265" d="M18.894,19H14.4L13.133,29.1h7.023Z" transform="translate(-6.543 -13.311)"/>
+                    <path id="Path_1266" data-name="Path 1266" d="M44.886,35H42v4.111l2.886-2.406Z" transform="translate(-14.583 -17.767)"/>
+                    <path id="Path_1267" data-name="Path 1267" d="M42,19h7.215V29.1H42Z" transform="translate(-14.583 -13.311)"/>
+                    <path id="Path_1268" data-name="Path 1268" d="M55.653,23.213a.808.808,0,0,0,0-1.144L54,20.414V22.7l.51.51A.826.826,0,0,0,55.653,23.213Z" transform="translate(-17.925 -13.705)"/>
+                    <path id="Path_1269" data-name="Path 1269" d="M54.453,28.171a.721.721,0,0,0-.593-.16.781.781,0,0,0-.6.788v3.53a.721.721,0,0,1-.211.51L46.56,39.333l-1.02-1.02,3.1-3.1L48.426,35a1.255,1.255,0,0,0-1.866,0L42.189,38.65a4.75,4.75,0,0,0-.621.649s-.006,0-.009.008A2.548,2.548,0,0,0,41,40.987v5.051H46.05V44.595a.722.722,0,0,1,.3-.587l4.906-3.5,3.45-6.9v-4.88a.721.721,0,0,0-.255-.551Z" transform="translate(-14.304 -15.817)"/>
+                    <path id="Path_1270" data-name="Path 1270" d="M9.389,24.635a.82.82,0,0,0,.669-.158l1.213-1.466.289-2.3-2.52,2.447A.846.846,0,0,0,8.8,24.187a.826.826,0,0,0,.585.449Z" transform="translate(-5.314 -13.787)"/>
+                    <path id="Path_1271" data-name="Path 1271" d="M33,37.051a.722.722,0,1,0,1.443,0V32H33Z" transform="translate(-12.076 -16.932)"/>
+                    <path id="Path_1272" data-name="Path 1272" d="M29,24h4.329v4.329H29Z" transform="translate(-10.962 -14.704)"/>
+                    <path id="Path_1273" data-name="Path 1273" d="M29,37.051a.722.722,0,1,0,1.443,0V32H29Z" transform="translate(-10.962 -16.932)"/>
+                    <path id="Path_1274" data-name="Path 1274" d="M16.513,38.646l-4.317-3.6A1.245,1.245,0,0,0,10.282,35l-.211.211,3.1,3.1-1.02,1.02L5.654,32.839a.722.722,0,0,1-.211-.51V28.8a.781.781,0,0,0-.6-.788A.722.722,0,0,0,4,28.721V33.6l3.451,6.9,4.906,3.5a.722.722,0,0,1,.3.587v1.443h5.051V40.987a2.831,2.831,0,0,0-1.2-2.341Z" transform="translate(-4 -15.817)"/>
+                    <path id="Path_1275" data-name="Path 1275" d="M23.536,22.229l2.435,2.084v-1.7l-2.665-2.221Z" transform="translate(-9.377 -13.699)"/>
+                    <path id="Path_1276" data-name="Path 1276" d="M37,24.146l2.165-2.165V20.414L37,22.579Z" transform="translate(-13.19 -13.705)"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h6 class="mt-3 fw-bold">حضانه ورعايه</h6>
+          <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+            النهائية المطلوبة للتصميم ويقول البعض ان وضع
+          </p>
+          <a class="link" href="nursery-centers.html"></a>
+        </div>
+      </li>
+      <!-- تعليم  -->
+      <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="service">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+            <defs>
+              <style>
+                .cls-1 {
+                  opacity: 0.5;
+                }
+          
+                .cls-2 {
+                  fill: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ffd10a"/>
+                <stop offset="0.048" stop-color="#ffd00c"/>
+                <stop offset="1" stop-color="#fec23c"/>
+              </linearGradient>
+            </defs>
+            <g id="Group_69287" data-name="Group 69287" class="cls-1" transform="translate(-1648 -1496)">
+              <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="svgexport-6_81_" data-name="svgexport-6 (81)" transform="translate(1680.019 1519.001)">
+                <g id="Page-1" transform="translate(-0.018)">
+                  <g id="_001---Degree" data-name="001---Degree">
+                    <path id="Shape" d="M28.191,13.795c-2.526-1.15-7.849-1.194-8.622-1.194s-6.1.044-8.622,1.194V8.017c.4-.511,3.526-1.385,8.622-1.385s8.224.874,8.622,1.385ZM19.57,16.58c-4.908,0-7.99-.81-8.566-1.326.576-.516,3.66-1.326,8.566-1.326s7.99.81,8.566,1.326C27.559,15.77,24.477,16.58,19.57,16.58ZM34.16,11.938H32.834V9.948a.663.663,0,1,1,1.326,0Zm0-3.884V5.211l3.979,1.421ZM19.579,0,32.834,4.737V8.08a1.994,1.994,0,0,0-1.015.81l-2.3.82V7.958c0-2.579-8.93-2.653-9.948-2.653S9.622,5.38,9.622,7.958V9.71L1,6.632Z" transform="translate(-0.988)"/>
+                    <path id="Shape-2" data-name="Shape" d="M21.686,32.323a13.967,13.967,0,0,1,.478,3.1,4.6,4.6,0,0,0-4.617.429,17.917,17.917,0,0,0-.456-3.536q1.205.025,2.472.025C20.288,32.343,20.992,32.335,21.686,32.323ZM20.227,42.954a3.316,3.316,0,1,1,3.316-3.316A3.316,3.316,0,0,1,20.227,42.954ZM.994,36.985a18.6,18.6,0,0,1,.663-5.637,18.6,18.6,0,0,1,.663,5.637,18.6,18.6,0,0,1-.663,5.637A18.6,18.6,0,0,1,.994,36.985Zm2,5.751a21.994,21.994,0,0,0,.648-5.751A22,22,0,0,0,3,31.234a116.363,116.363,0,0,0,12.708,1.05,17.072,17.072,0,0,1,.541,4.7c0,.1,0,.188,0,.28a4.6,4.6,0,0,0-.214,4.345l-.029.07A115.579,115.579,0,0,0,3,42.736ZM17.844,47.6l-.484-1.114a.663.663,0,0,0-.869-.345l-1.116.493L16.929,42.9a4.638,4.638,0,0,0,2.342,1.28Zm6.119-1.459a.663.663,0,0,0-.869.345l-.491,1.1-1.422-3.4A4.642,4.642,0,0,0,23.526,42.9l1.552,3.714Zm13.374-3.217a107.407,107.407,0,0,0-12.866-1.194l-.047-.114a4.615,4.615,0,0,0-.894-5.23,18.46,18.46,0,0,0-.474-4.086,110.7,110.7,0,0,0,14.281-1.248c.308.523.8,2.59.8,5.936S37.642,42.4,37.337,42.921Z" transform="translate(-0.982 -10.457)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h6 class="mt-3 fw-bold">تعليم</h6>
+          <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+            النهائية المطلوبة للتصميم ويقول البعض ان وضع
+          </p>
+          <a class="link" href="learning-centers.html"></a>
+        </div>
+      </li>
+      <!-- التزيين النسائي -->
+      <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="service">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+            <defs>
+              <style>
+                .cls-1 {
+                  opacity: 0.5;
+                }
+          
+                .cls-2 {
+                  fill: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ffd10a"/>
+                <stop offset="0.048" stop-color="#ffd00c"/>
+                <stop offset="1" stop-color="#fec23c"/>
+              </linearGradient>
+            </defs>
+            <g id="Group_69277" data-name="Group 69277" class="cls-1" transform="translate(-1648 -1496)">
+              <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="svgexport-6_82_" data-name="svgexport-6 (82)" transform="translate(1676.885 1519)">
+                <g id="Group_68117" data-name="Group 68117" transform="translate(4.116 0.001)">
+                  <g id="Group_68116" data-name="Group 68116" transform="translate(0 0)">
+                    <g id="Group_68115" data-name="Group 68115" transform="translate(0 21.159)">
+                      <path id="Path_1282" data-name="Path 1282" d="M4.116,339.89,8.465,350.8l3.617-2.174L7.733,337.717Z" transform="translate(-4.116 -333.506)"/>
+                      <path id="Path_1283" data-name="Path 1283" d="M121.687,282.222a7.561,7.561,0,0,0-6.116.449l-7.109,4.147-.037.031-.015.012v.005H108.4a2.811,2.811,0,0,1-1.791.669h-5.648V285.7H105.8a1.631,1.631,0,0,0,.011-3.262l-5.49-.038a.913.913,0,0,1-.327-.064,6.681,6.681,0,0,0-5.64-.107,7.661,7.661,0,0,0-3.438,4.483l3,7.528h11.306l16.632-10.457A.916.916,0,0,0,121.687,282.222Z" transform="translate(-84.395 -281.658)"/>
+                    </g>
+                    <path id="Path_1284" data-name="Path 1284" d="M232.267,3c-3.607-8.138-17.6,1.632-.059,12.944l-.009-.041c18.388-11.313,3.077-20.784.068-12.9Z" transform="translate(-207.081 -0.001)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h6 class="mt-3 fw-bold">التزيين النسائي</h6>
+          <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+            النهائية المطلوبة للتصميم ويقول البعض ان وضع
+          </p>
+          <a class="link" href="lady-centers.html"></a>
+        </div>
+      </li>
+      <!-- اللياقه والاسترخاء -->
+      <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" >
+        <div class="service">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+            <defs>
+              <style>
+                .cls-1 {
+                  opacity: 0.5;
+                }
+          
+                .cls-2 {
+                  fill: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ffd10a"/>
+                <stop offset="0.048" stop-color="#ffd00c"/>
+                <stop offset="1" stop-color="#fec23c"/>
+              </linearGradient>
+            </defs>
+            <g id="Group_69289" data-name="Group 69289" class="cls-1" transform="translate(-1648 -1496)">
+              <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="svgexport-6_84_" data-name="svgexport-6 (84)" transform="translate(1680.988 1522)">
+                <g id="Group_68118" data-name="Group 68118" transform="translate(0.011 0)">
+                  <path id="Path_1290" data-name="Path 1290" d="M0,0H5.606V8.5H0Z" transform="translate(14.117 20.129) rotate(-135)"/>
+                  <path id="Path_1291" data-name="Path 1291" d="M.83,307.185a2.806,2.806,0,0,0,0,3.964l1.4,1.4-.728.727a2.8,2.8,0,0,0,3.952,3.976l.013-.012.727-.727,1.4,1.4a2.785,2.785,0,0,0,1.982.821h0a2.8,2.8,0,0,0,2.57-1.687L1.7,306.6a2.8,2.8,0,0,0-.866.589Z" transform="translate(-0.011 -288.463)"/>
+                  <path id="Path_1292" data-name="Path 1292" d="M317.925,7.595l-1.4-1.4.717-.717.01-.01A2.8,2.8,0,0,0,313.284,1.5l-.013.014-.714.714-1.4-1.405a2.8,2.8,0,0,0-4.552.867l10.46,10.46a2.8,2.8,0,0,0,.866-4.553Z" transform="translate(-288.467 0)"/>
+                  <path id="Path_1293" data-name="Path 1293" d="M38.094,241.5l-3.964-3.964-2.76-2.76a2.8,2.8,0,0,0-4.553.866l13.171,13.171a2.8,2.8,0,0,0,.865-4.554Z" transform="translate(-25.232 -220.118)"/>
+                  <path id="Path_1294" data-name="Path 1294" d="M234.782,27.408a2.807,2.807,0,0,0,0,3.964l2.76,2.76h0l3.964,3.964h0l2.759,2.759h0a2.785,2.785,0,0,0,1.982.821h0a2.807,2.807,0,0,0,2.572-1.686L235.648,26.818a2.8,2.8,0,0,0-.865.59Z" transform="translate(-220.127 -25.232)"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h6 class="mt-3 fw-bold">اللياقه والاسترخاء</h6>
+          <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+            النهائية المطلوبة للتصميم ويقول البعض ان وضع
+          </p>
+          <a class="link" href="diet-centers.html"></a>
+        </div>
+      </li>
+      <!-- خدمات العماله -->
+      <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="service">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+            <defs>
+              <style>
+                .cls-1 {
+                  opacity: 0.5;
+                }
+          
+                .cls-2 {
+                  fill: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ffd10a"/>
+                <stop offset="0.048" stop-color="#ffd00c"/>
+                <stop offset="1" stop-color="#fec23c"/>
+              </linearGradient>
+            </defs>
+            <g id="Group_69290" data-name="Group 69290" class="cls-1" transform="translate(-1648 -1496)">
+              <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="svgexport-6_85_" data-name="svgexport-6 (85)" transform="translate(1678.578 1477.498)">
+                <g id="Group_68120" data-name="Group 68120" transform="translate(28.54 55.633)">
+                  <g id="Group_68119" data-name="Group 68119" transform="translate(0 0)">
+                    <path id="Path_1295" data-name="Path 1295" d="M401.33,273.32h-2.836a7.377,7.377,0,0,1,.447,2.536v10.718a3.16,3.16,0,0,1-.182,1.059h4.688a3.18,3.18,0,0,0,3.176-3.176v-5.843A5.3,5.3,0,0,0,401.33,273.32Z" transform="translate(-398.494 -273.32)"/>
+                  </g>
+                </g>
+                <g id="Group_68122" data-name="Group 68122" transform="translate(0 55.633)">
+                  <g id="Group_68121" data-name="Group 68121" transform="translate(0 0)">
+                    <path id="Path_1296" data-name="Path 1296" d="M7.682,275.857a7.376,7.376,0,0,1,.447-2.536H5.293A5.3,5.3,0,0,0,0,278.614v5.843a3.18,3.18,0,0,0,3.176,3.176H7.864a3.161,3.161,0,0,1-.182-1.059Z" transform="translate(0 -273.321)"/>
+                  </g>
+                </g>
+                <g id="Group_68124" data-name="Group 68124" transform="translate(9.8 52.876)">
+                  <g id="Group_68123" data-name="Group 68123">
+                    <path id="Path_1297" data-name="Path 1297" d="M148.605,234.815h-6.483a5.3,5.3,0,0,0-5.293,5.293v10.718a1.059,1.059,0,0,0,1.059,1.059H152.84a1.059,1.059,0,0,0,1.059-1.059V240.108A5.3,5.3,0,0,0,148.605,234.815Z" transform="translate(-136.829 -234.815)"/>
+                  </g>
+                </g>
+                <g id="Group_68126" data-name="Group 68126" transform="translate(11.969 38.84)">
+                  <g id="Group_68125" data-name="Group 68125">
+                    <path id="Path_1298" data-name="Path 1298" d="M173.48,38.84a6.365,6.365,0,1,0,6.366,6.366A6.373,6.373,0,0,0,173.48,38.84Z" transform="translate(-167.114 -38.84)"/>
+                  </g>
+                </g>
+                <g id="Group_68128" data-name="Group 68128" transform="translate(2.395 44.774)">
+                  <g id="Group_68127" data-name="Group 68127" transform="translate(0 0)">
+                    <path id="Path_1299" data-name="Path 1299" d="M38.2,121.689a4.759,4.759,0,1,0,4.761,4.761A4.766,4.766,0,0,0,38.2,121.689Z" transform="translate(-33.443 -121.689)"/>
+                  </g>
+                </g>
+                <g id="Group_68130" data-name="Group 68130" transform="translate(24.752 44.774)">
+                  <g id="Group_68129" data-name="Group 68129" transform="translate(0 0)">
+                    <path id="Path_1300" data-name="Path 1300" d="M350.368,121.689a4.761,4.761,0,1,0,4.761,4.761A4.766,4.766,0,0,0,350.368,121.689Z" transform="translate(-345.607 -121.689)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h6 class="mt-3 fw-bold">خدمات العماله</h6>
+          <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+            النهائية المطلوبة للتصميم ويقول البعض ان وضع
+          </p>
+          <a class="link" href="worker-centers.html"></a>
+        </div>
+      </li>
+      <!-- تحفيظ القرءان -->
+      <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="service">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+            <defs>
+              <style>
+                .cls-1 {
+                  opacity: 0.5;
+                }
+          
+                .cls-2 {
+                  fill: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ffd10a"/>
+                <stop offset="0.048" stop-color="#ffd00c"/>
+                <stop offset="1" stop-color="#fec23c"/>
+              </linearGradient>
+            </defs>
+            <g id="Group_69291" data-name="Group 69291" class="cls-1" transform="translate(-1648 -1496)">
+              <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+              </g>
+              <g id="svgexport-6_86_" data-name="svgexport-6 (86)" transform="translate(1668.999 1489.823)">
+                <path id="Path_1301" data-name="Path 1301" d="M28.97,49.883l21.9-9.044c.025-.01.051-.014.075-.022V40.7a1.022,1.022,0,0,0-1.4-.95L48.9,40V35.2a1.022,1.022,0,0,0-1.451-.927,38.687,38.687,0,0,1-7.746,2.88c-3.066.511-8.686,1.533-10.73,6.642-2.044-5.109-7.664-6.131-10.73-6.642a38.814,38.814,0,0,1-7.746-2.88,1.022,1.022,0,0,0-1.451.927V40L8.4,39.747A1.022,1.022,0,0,0,7,40.7v.119c.025.009.051.012.075.022Z" transform="translate(-1.467 0)"/>
+                <path id="Path_1302" data-name="Path 1302" d="M49.595,49.077,27.5,58.2,5.412,49.077A1.022,1.022,0,0,0,4,50.022v.338a1.022,1.022,0,0,0,.632.945L22.755,58.79,9.825,65.924a.511.511,0,0,0,.247.959H15.25a2.044,2.044,0,0,0,.946-.232l11.307-5.9,11.307,5.9a2.044,2.044,0,0,0,.946.232h5.179a.511.511,0,0,0,.247-.959L32.251,58.79,50.375,51.3a1.022,1.022,0,0,0,.632-.945v-.338a1.022,1.022,0,0,0-1.412-.945Z" transform="translate(0 -7.249)"/>
+              </g>
+            </g>
+          </svg>
+          <h6 class="mt-3 fw-bold">تحفيظ قرأن</h6>
+          <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+            النهائية المطلوبة للتصميم ويقول البعض ان وضع
+          </p>
+          <a class="link" href="saveQuran-centers.html"></a>
+        </div>
+      </li>
+    </ul>
+    <div class="d-block text-center">
+      <a href="services.html" class="btn rounded-pill main-btn mt-5 px-5" data-aos="fade-up" data-aos-duration="700">المزيد</a>
+    </div>
+  </div>
+</section>
+
+<!------------- sub-gallery section -------------->
+<section>
+  <div class="container">
+    <div class="title-container text-center">
+      <h5 class="title fs-3 fw-bold">المعرض</h5>
+      <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+    </div>
+    <div class="row gx-0 sub-gallery position-relative" data-aos="flip-down" data-aos-duration="600">
+      <div class="pic col-6 video-wrap position-relative">
+        <a href="javascript:void(0)" class="op-video" style="z-index:999">
+          <i class="fa-solid fa-play"></i>
+        </a>
+        <a href="video.html" class="link"></a>
+        <img src="images/gallery1.png" class="w-100 h-100" alt="">
+        <!-- <div class="play position-absolute top-50 start-50 translate-middle" style="z-index: 9;">
+          <img src="images/video.png" width="110px" alt=""> -->
+      </div>
+      <div class="col-6  h-100">
+        <div class="row gx-0  h-100">
+          <div class="pic col-12 position-relative h-50">
+            <a href="gallery.html" class="link"></a>
+            <img src="images/gallery2.png" class="w-100 h-100" alt="">
+          </div>
+          <div class="pic col-6 position-relative h-50">
+            <a href="gallery.html" class="link"></a>
+            <img src="images/gallery4.png" class="w-100 h-100" alt="">
+          </div>
+          <div class="pic col-6 position-relative h-50">
+            <a href="gallery.html" class="link"></a>
+            <img src="images/photo-1.png" class="w-100 h-100" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------- blog section -------------->
+<section class="blog py-5 my-5">
+  <div class="container">
+    <div class="title-container text-center">
+      <h5 class="title fs-3 fw-bold">المدونه</h5>
+      <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+    </div>
+    <div class="row gy-4 justify-content-between">
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800">
+        <div class="card">
+          <div class="month">مايو</div>
+          <img src="images/photo-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="fw-bold">حضانه ورعايه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="more" href="single-blog.html">
+              <span>قراءة المزيد</span>
+              <i class="fa-solid fa-left-long"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="card">
+          <div class="month">مايو</div>
+          <img src="images/photo-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="fw-bold">حضانه ورعايه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="more" href="single-blog.html">
+              <span>قراءة المزيد</span>
+              <i class="fa-solid fa-left-long"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="card">
+          <div class="month">مايو</div>
+          <img src="images/photo-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="fw-bold">حضانه ورعايه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="more" href="single-blog.html">
+              <span>قراءة المزيد</span>
+              <i class="fa-solid fa-left-long"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="d-block text-center">
+      <a href="blog.html" class="btn rounded-pill main-btn mt-5 px-5">المزيد</a>
+    </div>
+  </div>
+</section>
+
+<!------------- accordion section -------------->
+<section class="artical my-5">
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" data-aos="fade-up" data-aos-duration="800" >
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+            هذا النص مثال لنص يمكن ان يستبدل بيها نص اخر في نفس المساحه؟          
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            هذا النص مثال لنص يمكن ان يستبدل بيها نص اخر في نفس المساحه؟          
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------- join section -------------->
+<section>
+  <div class="container">
+    <div class="join">
+      <div class="row gy-5 align-items-center">
+        <div class="col">
+          <div class="join-text ">
+            <h4 class="fs-2 fw-bold">انضم الينا كـ مزود خدمه</h4>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم </p>
+            <a href="contactUs.html" class="btn rounded-pill main-btn px-5">تواصل معنا</a>
+          </div>
+        </div>
+        <div class="col-lg-auto">
+          <img src="images/person.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------- footer -------------->
+<footer>
+  <!-- navigation -->
+  <div class="navbar navbar-expand-lg">
+    <div class="container align-items-center">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">الخدمات</a>
+        </li>
+      </ul>
+      <a class="navbar-brand m-0" href="index.html"><img src="images/logo2.png" alt=""></a>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            المعرض
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+            <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">المدونة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactUs.html">تواصل معنا</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- nested footer -->
+  <div class="sub-footer">
+    <div class="container">
+      <a href="https://smartvision4p.com" target="_blank" class="link"></a>
+      <p class="text-center mb-0">&copy; 
+      جميع الحقوق محفوظه لموقع سمارت فيجن للتصميم المواقع والتطبيقات
+         </p>
+      <img src="images/logooo.png" alt="">
+    </div>
+  </div>
+</footer>
+
+<!--------- scroll up arrow ---------->
+<div class="up" id="top">
+  <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+</div>
+
+
+<!-- jQuery script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- ---- jquery-ui ---- -->
+<script src="js/jquery-ui.min.js"></script>
+
+<!-- popper script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js" integrity="sha512-8cU710tp3iH9RniUh6fq5zJsGnjLzOWLWdZqBMLtqaoZUA6AWIE34lwMB3ipUNiTBP5jEZKY95SfbNnQ8cCKvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- fancyBox script -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!-- owl-carousel script -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- bootstrap script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- rateyo script -->
+<script src="js/jquery.rateyo.min.js"></script>
+
+<!-- nice select script -->
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- aos script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- typed js script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

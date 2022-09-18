@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>earth services</title>
+  <link rel="icon" href="images/logo.png">
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- owl-carousel link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- aos link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- custom css AR file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- custom css EN file link  -->
+  <!-- <link rel="stylesheet" href="css/style-En.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto"/>
+
+
+</head>
+<body>
+<!------------- nav section -------------->
+
+<!-- nav @ max width 992 -->
+  <!-- if auth -->
+  <div class="min-nav col-xs-12">
+    <a href="profile.html">
+      <i class="bi bi-person"></i>
+    </a>
+    <a class="" href="notif.html">
+      <i class="bi bi-bell"></i>
+      <span class="count">0</span>
+    </a>
+    <a href="cart.html">
+      <i class="bi bi-cart"></i>
+      <span class="count">1</span>
+    </a>
+  </div>
+<!-- else -->
+  <div class="min-nav d-none col-xs-12">
+    <a href="login.html">
+      تسجيل دخول
+    </a>
+    <a href="register.html">
+      انشاء حساب
+    </a>
+  </div>
+
+<!-- nav @ min width 992 "large screen" -->
+<nav class="navbar navbar-expand-lg navbar-light top-0">
+<div class="container">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    </span>
+  </button>
+  <a class="navbar-brand m-0" href="index.html"><img src="images/logo.png" alt=""></a>
+  <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a href="aboutUs.html" class="nav-link">من نحن</a>
+      </li>
+      <li class="nav-item">
+        <a href="services.html" class="nav-link active">الخدمات</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          المعرض
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+          <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="blog.html" class="nav-link">المدونة</a>
+      </li>
+      <li class="nav-item">
+        <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+      </li>
+    </ul> 
+  </div>
+  <!-- if Auth -->
+  <div class="icons show-lg">
+    <div class="icon">
+      <a href="profile.html">
+        <i class="bi bi-person"></i>
+      </a>
+    </div>
+    <div class="icon has-menu">
+      <a href="notif.html">
+        <i class="bi bi-bell"></i>
+      </a>
+      <div class="sub-menu">
+        <div class="notification">
+          <div class="notifi row gx-0 justify-content-between align-items-center">
+            <a class="link" href="notif.html"></a>
+            <p class="cut-text px-3">
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+            </p>
+          </div>
+          <div class="notifi row gx-0 justify-content-between align-items-center">
+            <a class="link" href="notif.html"></a>
+            <p class="cut-text px-3">
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+            </p>
+          </div>
+        </div>
+      </div>
+      <span class="count"></span>
+    </div>
+    <div class="icon">
+      <a href="cart.html">
+        <i class="bi bi-cart"></i>
+      </a>
+      <span class="count">1</span>
+    </div>
+  </div>
+  <!-- else -->
+  <div class="login d-none show-lg">
+    <a class="" href="login.html">تسجيل دخول</a>
+    <a class="btn rounded-pill m-0 main-btn" href="register.html">انشاء حساب</a>
+  </div>
+</div>
+</nav>
+
+
+<!------------- breadcrumb -------------->
+<section class="">
+  <div class="container">
+    <div class="breadcrumb-container" style="background-image: url(./images/breadcrumb/حضانه\ ورعايه.jpg);">
+      <div class="overlay">  
+        <div>
+          <h3 class="text-center mb-3">الخدمات</h3>
+          <div class="d-flex justify-content-center breadcrumb">
+            <a href="index.html" class="text-muted"> الرئيسية</a>
+            <span class="mx-2 text-muted">/</span>
+            <a href="services.html" class="text-muted">الخدمات</a>
+            <span class="mx-2  text-muted">/</span>
+            <a href="nursery-centers.html" class="text-muted">المراكز</a>
+            <span class="mx-2">/</span>
+            <h6 class="main-color"> حضانه ورعايه</h6>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<section class="center-details">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 h-100">
+                <h6 class="mb-3">التفاصيل</h6>
+                <div class="detail">
+                    <div class="d-flex h-100 align-items-center">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h6 class="mb-3">العنوان</h6>
+                <div class="detail">
+
+                    <div class="d-flex h-100 align-items-center">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>يكتب العنوان هنا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+<section>
+  <div class="container">
+    <form id="formID" action="">
+      <div class="select row mt-5">
+        <div class="col-6 col-md-4 col-lg-2">
+          <input type="checkbox" name="lang" value="en" id="op1" class="d-none">
+          <label class="d-inline-block" data-target="900" for="op1" > خدمة لغه انجليزيه</label>
+        </div>
+      </div>
+      <div class="center-form">
+        <h5>الرجاء ادخال البيانات التاليه لاكمال الحجز في خدمة حضانه ورعايه</h5>
+        <div class="row gy-3">
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label for="">
+                من يوم  :
+              </label>
+              <input class="datepicker form-control" name="fromDate" type="text" id="datepicker" autocomplete="off">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label for="">
+                  الى يوم  :
+              </label>
+              <input class="datepicker form-control" name="toDate" type="text" id="datepicker1" autocomplete="off">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form-group">
+              <label for="">
+                نوع الاشتراك :
+              </label>
+              <input class="form-control" name="subscribe" type="text" placeholder="سنوي">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form-group">
+              <label for="">
+                النوع :
+              </label>
+              <select class="form-control" name="gender" id="">
+                <option value="male" selected>ذكر</option>
+                <option value="female">انثى</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form-group">
+              <label for="">
+                  العمر :
+              </label>
+              <input class="form-control" name="age" type="number" min="1" placeholder="5 سنوات">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form-group">
+              <label for="">
+                  العدد :
+              </label>
+              <input id="count-num" name="count-num" class="form-control" type="number" min="1"  value="1">
+            </div>
+          </div>
+        </div>
+        <div class="total-price">
+          <p>
+              سعر الخدمة : 
+            <span> <span id="price" data-target="200">200</span> ريال سعودي</span>
+          </p>
+          <div class="text-center">
+            <button class="btn rounded-pill m-0 main-btn px-5 m-2" type="submit">اطلب الخدمة الان</button>
+            <button class="btn rounded-pill m-0 btn-outline-success px-5 m-2">اضف للسلة الان</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="response"></div>
+  </div>
+</section>
+<section class="comment">
+  <div class="container">
+      <div class="post-comments">
+        <div class="container">
+          <ul>
+              <div class="mt-4">
+                  <p class="head-line fs-5">اراء العملاء</p>
+                  <div class="Stars pe-3" style="--rating:3.5;"></div>
+              </div>
+              <li>
+                  <div class="com-img">
+                      <img src="images/wesam.jpg" alt="">
+                  </div>
+                  <div class="com-data">
+                      <div class="d-top">
+                          <h5>وسام صقر</h5>
+                          <div class="Stars" style="--rating:3.5;"></div>
+                      </div>
+                      <div class="d-bot">
+                          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً</p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="com-img">
+                      <img src="images/wesam.jpg" alt="">
+                  </div>
+                  <div class="com-data">
+                      <div class="d-top">
+                          <h5>وسام صقر</h5>
+                          <div class="Stars" style="--rating:3.5;"></div>
+                      </div>
+                      <div class="d-bot">
+                          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً</p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="com-img">
+                      <img src="images/wesam.jpg" alt="">
+                  </div>
+                  <div class="com-data">
+                      <div class="d-top">
+                          <h5>وسام صقر</h5>
+                          <div class="Stars" style="--rating:3.5;"></div>
+                      </div>
+                      <div class="d-bot">
+                          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً</p>
+                      </div>
+                  </div>
+              </li>
+              <li class="add-comment">
+                <div class="com-img">
+                  <img src="images/wesam.jpg" alt="">
+              </div>
+              <div class="com-data">
+                  <div class="d-top">
+                      <h5>وسام صقر</h5>
+                      <div class="Stars"></div>
+                  </div>
+                  <div class="d-bot">
+                      <p class="p-comment"></p>
+                  </div>
+              </div>
+              </li>
+          </ul>
+      </div>
+      <div class="post-add-comment">
+        <form id="form-comment" action="">
+          <div class="row mt-4">
+              <div class="d-flex align-items-center mt-4">
+                  <p class="head-line fs-5 ms-2">اكتب تقييمك</p>
+                  <div id="rateYo"></div>
+                  <span class='result d-none'>0</span>
+              </div>
+              <div class="form-group col-md-12 col-xs-12">
+                  <textarea class="form-control" placeholder="اكتب تقييمك هنا" name="comment" rows="8" required></textarea>
+              </div>
+              <div class="form-group col-md-12 col-xs-12 my-4">
+                  <button type="submit" class="btn rounded-pill m-0 main-btn px-5">ارسال</button>
+              </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</section>
+
+<!------------- join section -------------->
+<section>
+    <div class="container">
+      <div class="join">
+        <div class="row gy-5 align-items-center">
+          <div class="col">
+            <div class="join-text ">
+              <h4 class="fs-2 fw-bold">انضم الينا كـ مزود خدمه</h4>
+              <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم </p>
+              <a href="contactUs.html" class="btn rounded-pill main-btn px-5">تواصل معنا</a>
+            </div>
+          </div>
+          <div class="col-lg-auto">
+            <img src="images/person.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!------------- footer -------------->
+<footer>
+  <!-- navigation -->
+  <div class="navbar navbar-expand-lg">
+    <div class="container align-items-center">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="services.html">الخدمات</a>
+        </li>
+      </ul>
+      <a class="navbar-brand m-0" href="index.html"><img src="images/logo2.png" alt=""></a>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            المعرض
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+            <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">المدونة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactUs.html">تواصل معنا</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- nested footer -->
+  <div class="sub-footer">
+    <div class="container">
+      <a href="https://smartvision4p.com" target="_blank" class="link"></a>
+      <p class="text-center mb-0">&copy; 
+      جميع الحقوق محفوظه لموقع سمارت فيجن للتصميم المواقع والتطبيقات
+         </p>
+      <img src="images/logooo.png" alt="">
+    </div>
+  </div>
+</footer>
+
+
+<!-- jQuery script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- ---- jquery-ui ---- -->
+<script src="js/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.4/jquery.xdomainrequest.min.js" integrity="sha512-AqrEfeiUZBu9nWx7jHZlve8pPY3Mavhhwobv+pVxTSc10vpElmhFNDqe8DopVSvApKGfUrOQO3OshR8avd+pTw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- popper script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js" integrity="sha512-8cU710tp3iH9RniUh6fq5zJsGnjLzOWLWdZqBMLtqaoZUA6AWIE34lwMB3ipUNiTBP5jEZKY95SfbNnQ8cCKvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- owl-carousel script -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- bootstrap script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- rateyo script -->
+<script src="js/jquery.rateyo.min.js"></script>
+
+<!-- nice select script -->
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- aos script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- typed js script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

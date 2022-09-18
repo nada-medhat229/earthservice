@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>earth services</title>
+  <link rel="icon" href="images/logo.png">
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- owl-carousel link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- aos link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- custom css AR file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- custom css EN file link  -->
+  <!-- <link rel="stylesheet" href="css/style-En.css"> -->
+
+</head>
+
+<body>
+
+  <!------------- nav section -------------->
+
+  <!-- nav @ max width 992 -->
+  <!-- if auth -->
+  <div class="min-nav col-xs-12">
+    <a href="profile.html">
+      <i class="bi bi-person"></i>
+    </a>
+    <a class="" href="notif.html">
+      <i class="bi bi-bell"></i>
+      <span class="count">0</span>
+    </a>
+    <a href="cart.html">
+      <i class="bi bi-cart"></i>
+      <span class="count">1</span>
+    </a>
+  </div>
+  <!-- else -->
+  <div class="min-nav d-none col-xs-12">
+    <a href="login.html">
+      تسجيل دخول
+    </a>
+    <a href="notif.html">
+      انشاء حساب
+    </a>
+  </div>
+
+  <!-- nav @ min width 992 "large screen" -->
+  <nav class="navbar navbar-expand-lg navbar-light top-0">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <a class="navbar-brand m-0" href="index.html"><img src="images/logo.png" alt=""></a>
+      <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutUs.html" class="nav-link">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link active">الخدمات</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              المعرض
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+              <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">المدونة</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+          </li>
+        </ul>
+      </div>
+      <!-- if Auth -->
+      <div class="icons show-lg">
+        <div class="icon">
+          <a href="profile.html">
+            <i class="bi bi-person"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="notif.html">
+            <i class="bi bi-bell"></i>
+          </a>
+          <span class="count">0</span>
+        </div>
+        <div class="icon">
+          <a href="cart.html">
+            <i class="bi bi-cart"></i>
+          </a>
+          <span class="count">1</span>
+        </div>
+      </div>
+
+      <!-- else -->
+      <div class="login d-none show-lg">
+        <a class="" href="">تسجيل دخول</a>
+        <a class="btn rounded-pill m-0 main-btn" href="">انشاء حساب</a>
+      </div>
+    </div>
+  </nav>
+
+  <!------------- breadcrumb -------------->
+  <section class="">
+    <div class="container">
+      <div class="breadcrumb-container" style="background-image: url(./images/breadcrumb/الخدمات\ والمراكز.jpg);">
+        <div class="overlay">
+          <div>
+            <h3 class="text-center mb-3">الخدمات</h3>
+            <div class="d-flex justify-content-center breadcrumb">
+              <a href="index.html" class="text-muted"> الرئيسية</a>
+              <span class="mx-2">/</span>
+              <h6 class="main-color">الخدمات</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!------------- services sections -------------->
+  <section class="services py-5 my-5">
+    <div class="container">
+      <ul class="row gy-4">
+        <!-- حضانه -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800">
+          <div class="service">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.5;
+                    }
+              
+                    .cls-2 {
+                      fill: url(#linear-gradient);
+                    }
+                  </style>
+                  <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#ffd10a"/>
+                    <stop offset="0.048" stop-color="#ffd00c"/>
+                    <stop offset="1" stop-color="#fec23c"/>
+                  </linearGradient>
+                </defs>
+                <g id="Group_68098" data-name="Group 68098" class="cls-1" transform="translate(-1648 -1496)">
+                  <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                    <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                  </g>
+                  <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                    <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                  </g>
+                  <g id="svgexport-6_79_" data-name="svgexport-6 (79)" transform="translate(1675.999 1522)">
+                    <g id="Glyph" transform="translate(0 0)">
+                      <circle id="Ellipse_565" data-name="Ellipse 565" cx="2.354" cy="2.354" r="2.354" transform="translate(28.678)"/>
+                      <circle id="Ellipse_566" data-name="Ellipse 566" cx="1.884" cy="1.884" r="1.884" transform="translate(18.319 3.767)"/>
+                      <circle id="Ellipse_567" data-name="Ellipse 567" cx="2.354" cy="2.354" r="2.354" transform="translate(7.959)"/>
+                      <path id="Path_1264" data-name="Path 1264" d="M20.443,38.51V35H19v2.307Z" transform="translate(-8.177 -17.767)"/>
+                      <path id="Path_1265" data-name="Path 1265" d="M18.894,19H14.4L13.133,29.1h7.023Z" transform="translate(-6.543 -13.311)"/>
+                      <path id="Path_1266" data-name="Path 1266" d="M44.886,35H42v4.111l2.886-2.406Z" transform="translate(-14.583 -17.767)"/>
+                      <path id="Path_1267" data-name="Path 1267" d="M42,19h7.215V29.1H42Z" transform="translate(-14.583 -13.311)"/>
+                      <path id="Path_1268" data-name="Path 1268" d="M55.653,23.213a.808.808,0,0,0,0-1.144L54,20.414V22.7l.51.51A.826.826,0,0,0,55.653,23.213Z" transform="translate(-17.925 -13.705)"/>
+                      <path id="Path_1269" data-name="Path 1269" d="M54.453,28.171a.721.721,0,0,0-.593-.16.781.781,0,0,0-.6.788v3.53a.721.721,0,0,1-.211.51L46.56,39.333l-1.02-1.02,3.1-3.1L48.426,35a1.255,1.255,0,0,0-1.866,0L42.189,38.65a4.75,4.75,0,0,0-.621.649s-.006,0-.009.008A2.548,2.548,0,0,0,41,40.987v5.051H46.05V44.595a.722.722,0,0,1,.3-.587l4.906-3.5,3.45-6.9v-4.88a.721.721,0,0,0-.255-.551Z" transform="translate(-14.304 -15.817)"/>
+                      <path id="Path_1270" data-name="Path 1270" d="M9.389,24.635a.82.82,0,0,0,.669-.158l1.213-1.466.289-2.3-2.52,2.447A.846.846,0,0,0,8.8,24.187a.826.826,0,0,0,.585.449Z" transform="translate(-5.314 -13.787)"/>
+                      <path id="Path_1271" data-name="Path 1271" d="M33,37.051a.722.722,0,1,0,1.443,0V32H33Z" transform="translate(-12.076 -16.932)"/>
+                      <path id="Path_1272" data-name="Path 1272" d="M29,24h4.329v4.329H29Z" transform="translate(-10.962 -14.704)"/>
+                      <path id="Path_1273" data-name="Path 1273" d="M29,37.051a.722.722,0,1,0,1.443,0V32H29Z" transform="translate(-10.962 -16.932)"/>
+                      <path id="Path_1274" data-name="Path 1274" d="M16.513,38.646l-4.317-3.6A1.245,1.245,0,0,0,10.282,35l-.211.211,3.1,3.1-1.02,1.02L5.654,32.839a.722.722,0,0,1-.211-.51V28.8a.781.781,0,0,0-.6-.788A.722.722,0,0,0,4,28.721V33.6l3.451,6.9,4.906,3.5a.722.722,0,0,1,.3.587v1.443h5.051V40.987a2.831,2.831,0,0,0-1.2-2.341Z" transform="translate(-4 -15.817)"/>
+                      <path id="Path_1275" data-name="Path 1275" d="M23.536,22.229l2.435,2.084v-1.7l-2.665-2.221Z" transform="translate(-9.377 -13.699)"/>
+                      <path id="Path_1276" data-name="Path 1276" d="M37,24.146l2.165-2.165V20.414L37,22.579Z" transform="translate(-13.19 -13.705)"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h6 class="mt-3 fw-bold">حضانه ورعايه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="nursery-centers.html"></a>
+          </div>
+        </li>
+        <!-- تعليم  -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69287" data-name="Group 69287" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_81_" data-name="svgexport-6 (81)" transform="translate(1680.019 1519.001)">
+                  <g id="Page-1" transform="translate(-0.018)">
+                    <g id="_001---Degree" data-name="001---Degree">
+                      <path id="Shape" d="M28.191,13.795c-2.526-1.15-7.849-1.194-8.622-1.194s-6.1.044-8.622,1.194V8.017c.4-.511,3.526-1.385,8.622-1.385s8.224.874,8.622,1.385ZM19.57,16.58c-4.908,0-7.99-.81-8.566-1.326.576-.516,3.66-1.326,8.566-1.326s7.99.81,8.566,1.326C27.559,15.77,24.477,16.58,19.57,16.58ZM34.16,11.938H32.834V9.948a.663.663,0,1,1,1.326,0Zm0-3.884V5.211l3.979,1.421ZM19.579,0,32.834,4.737V8.08a1.994,1.994,0,0,0-1.015.81l-2.3.82V7.958c0-2.579-8.93-2.653-9.948-2.653S9.622,5.38,9.622,7.958V9.71L1,6.632Z" transform="translate(-0.988)"/>
+                      <path id="Shape-2" data-name="Shape" d="M21.686,32.323a13.967,13.967,0,0,1,.478,3.1,4.6,4.6,0,0,0-4.617.429,17.917,17.917,0,0,0-.456-3.536q1.205.025,2.472.025C20.288,32.343,20.992,32.335,21.686,32.323ZM20.227,42.954a3.316,3.316,0,1,1,3.316-3.316A3.316,3.316,0,0,1,20.227,42.954ZM.994,36.985a18.6,18.6,0,0,1,.663-5.637,18.6,18.6,0,0,1,.663,5.637,18.6,18.6,0,0,1-.663,5.637A18.6,18.6,0,0,1,.994,36.985Zm2,5.751a21.994,21.994,0,0,0,.648-5.751A22,22,0,0,0,3,31.234a116.363,116.363,0,0,0,12.708,1.05,17.072,17.072,0,0,1,.541,4.7c0,.1,0,.188,0,.28a4.6,4.6,0,0,0-.214,4.345l-.029.07A115.579,115.579,0,0,0,3,42.736ZM17.844,47.6l-.484-1.114a.663.663,0,0,0-.869-.345l-1.116.493L16.929,42.9a4.638,4.638,0,0,0,2.342,1.28Zm6.119-1.459a.663.663,0,0,0-.869.345l-.491,1.1-1.422-3.4A4.642,4.642,0,0,0,23.526,42.9l1.552,3.714Zm13.374-3.217a107.407,107.407,0,0,0-12.866-1.194l-.047-.114a4.615,4.615,0,0,0-.894-5.23,18.46,18.46,0,0,0-.474-4.086,110.7,110.7,0,0,0,14.281-1.248c.308.523.8,2.59.8,5.936S37.642,42.4,37.337,42.921Z" transform="translate(-0.982 -10.457)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">تعليم</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="learning-centers.html"></a>
+          </div>
+        </li>
+        <!-- التزيين النسائي -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69277" data-name="Group 69277" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_82_" data-name="svgexport-6 (82)" transform="translate(1676.885 1519)">
+                  <g id="Group_68117" data-name="Group 68117" transform="translate(4.116 0.001)">
+                    <g id="Group_68116" data-name="Group 68116" transform="translate(0 0)">
+                      <g id="Group_68115" data-name="Group 68115" transform="translate(0 21.159)">
+                        <path id="Path_1282" data-name="Path 1282" d="M4.116,339.89,8.465,350.8l3.617-2.174L7.733,337.717Z" transform="translate(-4.116 -333.506)"/>
+                        <path id="Path_1283" data-name="Path 1283" d="M121.687,282.222a7.561,7.561,0,0,0-6.116.449l-7.109,4.147-.037.031-.015.012v.005H108.4a2.811,2.811,0,0,1-1.791.669h-5.648V285.7H105.8a1.631,1.631,0,0,0,.011-3.262l-5.49-.038a.913.913,0,0,1-.327-.064,6.681,6.681,0,0,0-5.64-.107,7.661,7.661,0,0,0-3.438,4.483l3,7.528h11.306l16.632-10.457A.916.916,0,0,0,121.687,282.222Z" transform="translate(-84.395 -281.658)"/>
+                      </g>
+                      <path id="Path_1284" data-name="Path 1284" d="M232.267,3c-3.607-8.138-17.6,1.632-.059,12.944l-.009-.041c18.388-11.313,3.077-20.784.068-12.9Z" transform="translate(-207.081 -0.001)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">التزيين النسائي</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="lady-centers.html"></a>
+          </div>
+        </li>
+        <!-- الصالونات التجميليه -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="300">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69288" data-name="Group 69288" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_83_" data-name="svgexport-6 (83)" transform="translate(1677.055 1518.729)">
+                  <path id="Path_1285" data-name="Path 1285" d="M32.926,8.977c-8.271,0-12.161,6.928-12.161,15.473s5.978,15.473,12.161,15.473S45.087,33,45.087,24.45,41.2,8.977,32.926,8.977ZM31.093,27.242a.412.412,0,0,1,.581-.044,1.708,1.708,0,0,0,2.52,0,.412.412,0,0,1,.538.626,2.508,2.508,0,0,1-3.6,0,.412.412,0,0,1-.044-.582Zm-6.786-3.524c0-1.425,1.495-2.58,3.339-2.58s3.338,1.155,3.338,2.58S29.49,26.3,27.645,26.3,24.307,25.143,24.307,23.718ZM36.659,33.3a5.262,5.262,0,0,1-7.452,0,.538.538,0,0,1,.082-.794,5.468,5.468,0,0,1,2.691-1.426,1.141,1.141,0,0,1,.677.184.506.506,0,0,0,.553,0,1.141,1.141,0,0,1,.677-.184A5.468,5.468,0,0,1,36.578,32.5a.538.538,0,0,1,.082.794Zm1.563-7c-1.844,0-3.338-1.155-3.338-2.58s1.495-2.58,3.338-2.58,3.339,1.155,3.339,2.58-1.494,2.58-3.338,2.58Z" transform="translate(-12.809 -4.821)"/>
+                  <path id="Path_1286" data-name="Path 1286" d="M61.115,93.154H58.8a.443.443,0,0,1,0-.887h2.314a.443.443,0,1,1,0,.887Z" transform="translate(-39.833 -64.695)"/>
+                  <path id="Path_1287" data-name="Path 1287" d="M102.591,104.815l.355.649a.675.675,0,0,0,.267.267l.649.355a.672.672,0,0,1,0,1.181l-.649.355a.675.675,0,0,0-.267.267l-.355.649a.672.672,0,0,1-1.181,0l-.355-.649a.672.672,0,0,0-.267-.267l-.649-.355a.673.673,0,0,1,0-1.181l.649-.355a.672.672,0,0,0,.267-.267l.355-.649a.672.672,0,0,1,1.181,0Z" transform="translate(-69.616 -73.463)"/>
+                  <path id="Path_1288" data-name="Path 1288" d="M5.748,17.547,6.1,18.2a.671.671,0,0,0,.267.267l.649.355A.672.672,0,0,1,7.02,20l-.649.355a.671.671,0,0,0-.267.267l-.355.649a.672.672,0,0,1-1.181,0l-.354-.65a.675.675,0,0,0-.267-.267L3.3,20a.672.672,0,0,1,0-1.181l.649-.355a.675.675,0,0,0,.267-.267l.355-.649a.672.672,0,0,1,1.18,0Z" transform="translate(0 -10.73)"/>
+                  <path id="Path_1289" data-name="Path 1289" d="M19.552,2.5l.232.424a.438.438,0,0,0,.175.175l.424.232a.439.439,0,0,1,0,.771l-.424.232a.438.438,0,0,0-.175.175l-.232.424a.439.439,0,0,1-.771,0l-.232-.424a.438.438,0,0,0-.175-.175L17.95,4.1a.439.439,0,0,1,0-.771l.424-.232a.438.438,0,0,0,.175-.175l.232-.424a.439.439,0,0,1,.771,0Z" transform="translate(-10.621)"/>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">الصالونات التجميليه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="beauty-centers.html"></a>
+          </div>
+        </li>
+        <!-- اللياقه والاسترخاء -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" >
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69289" data-name="Group 69289" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_84_" data-name="svgexport-6 (84)" transform="translate(1680.988 1522)">
+                  <g id="Group_68118" data-name="Group 68118" transform="translate(0.011 0)">
+                    <path id="Path_1290" data-name="Path 1290" d="M0,0H5.606V8.5H0Z" transform="translate(14.117 20.129) rotate(-135)"/>
+                    <path id="Path_1291" data-name="Path 1291" d="M.83,307.185a2.806,2.806,0,0,0,0,3.964l1.4,1.4-.728.727a2.8,2.8,0,0,0,3.952,3.976l.013-.012.727-.727,1.4,1.4a2.785,2.785,0,0,0,1.982.821h0a2.8,2.8,0,0,0,2.57-1.687L1.7,306.6a2.8,2.8,0,0,0-.866.589Z" transform="translate(-0.011 -288.463)"/>
+                    <path id="Path_1292" data-name="Path 1292" d="M317.925,7.595l-1.4-1.4.717-.717.01-.01A2.8,2.8,0,0,0,313.284,1.5l-.013.014-.714.714-1.4-1.405a2.8,2.8,0,0,0-4.552.867l10.46,10.46a2.8,2.8,0,0,0,.866-4.553Z" transform="translate(-288.467 0)"/>
+                    <path id="Path_1293" data-name="Path 1293" d="M38.094,241.5l-3.964-3.964-2.76-2.76a2.8,2.8,0,0,0-4.553.866l13.171,13.171a2.8,2.8,0,0,0,.865-4.554Z" transform="translate(-25.232 -220.118)"/>
+                    <path id="Path_1294" data-name="Path 1294" d="M234.782,27.408a2.807,2.807,0,0,0,0,3.964l2.76,2.76h0l3.964,3.964h0l2.759,2.759h0a2.785,2.785,0,0,0,1.982.821h0a2.807,2.807,0,0,0,2.572-1.686L235.648,26.818a2.8,2.8,0,0,0-.865.59Z" transform="translate(-220.127 -25.232)"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">اللياقه والاسترخاء</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="diet-centers.html"></a>
+          </div>
+        </li>
+        <!-- خدمات العماله -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.229" height="83.676" viewBox="0 0 95.229 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69290" data-name="Group 69290" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1660 1507)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_85_" data-name="svgexport-6 (85)" transform="translate(1678.578 1477.498)">
+                  <g id="Group_68120" data-name="Group 68120" transform="translate(28.54 55.633)">
+                    <g id="Group_68119" data-name="Group 68119" transform="translate(0 0)">
+                      <path id="Path_1295" data-name="Path 1295" d="M401.33,273.32h-2.836a7.377,7.377,0,0,1,.447,2.536v10.718a3.16,3.16,0,0,1-.182,1.059h4.688a3.18,3.18,0,0,0,3.176-3.176v-5.843A5.3,5.3,0,0,0,401.33,273.32Z" transform="translate(-398.494 -273.32)"/>
+                    </g>
+                  </g>
+                  <g id="Group_68122" data-name="Group 68122" transform="translate(0 55.633)">
+                    <g id="Group_68121" data-name="Group 68121" transform="translate(0 0)">
+                      <path id="Path_1296" data-name="Path 1296" d="M7.682,275.857a7.376,7.376,0,0,1,.447-2.536H5.293A5.3,5.3,0,0,0,0,278.614v5.843a3.18,3.18,0,0,0,3.176,3.176H7.864a3.161,3.161,0,0,1-.182-1.059Z" transform="translate(0 -273.321)"/>
+                    </g>
+                  </g>
+                  <g id="Group_68124" data-name="Group 68124" transform="translate(9.8 52.876)">
+                    <g id="Group_68123" data-name="Group 68123">
+                      <path id="Path_1297" data-name="Path 1297" d="M148.605,234.815h-6.483a5.3,5.3,0,0,0-5.293,5.293v10.718a1.059,1.059,0,0,0,1.059,1.059H152.84a1.059,1.059,0,0,0,1.059-1.059V240.108A5.3,5.3,0,0,0,148.605,234.815Z" transform="translate(-136.829 -234.815)"/>
+                    </g>
+                  </g>
+                  <g id="Group_68126" data-name="Group 68126" transform="translate(11.969 38.84)">
+                    <g id="Group_68125" data-name="Group 68125">
+                      <path id="Path_1298" data-name="Path 1298" d="M173.48,38.84a6.365,6.365,0,1,0,6.366,6.366A6.373,6.373,0,0,0,173.48,38.84Z" transform="translate(-167.114 -38.84)"/>
+                    </g>
+                  </g>
+                  <g id="Group_68128" data-name="Group 68128" transform="translate(2.395 44.774)">
+                    <g id="Group_68127" data-name="Group 68127" transform="translate(0 0)">
+                      <path id="Path_1299" data-name="Path 1299" d="M38.2,121.689a4.759,4.759,0,1,0,4.761,4.761A4.766,4.766,0,0,0,38.2,121.689Z" transform="translate(-33.443 -121.689)"/>
+                    </g>
+                  </g>
+                  <g id="Group_68130" data-name="Group 68130" transform="translate(24.752 44.774)">
+                    <g id="Group_68129" data-name="Group 68129" transform="translate(0 0)">
+                      <path id="Path_1300" data-name="Path 1300" d="M350.368,121.689a4.761,4.761,0,1,0,4.761,4.761A4.766,4.766,0,0,0,350.368,121.689Z" transform="translate(-345.607 -121.689)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">خدمات العماله</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="worker-centers.html"></a>
+          </div>
+        </li>
+        <!-- تحفيظ القرءان -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69291" data-name="Group 69291" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_86_" data-name="svgexport-6 (86)" transform="translate(1668.999 1489.823)">
+                  <path id="Path_1301" data-name="Path 1301" d="M28.97,49.883l21.9-9.044c.025-.01.051-.014.075-.022V40.7a1.022,1.022,0,0,0-1.4-.95L48.9,40V35.2a1.022,1.022,0,0,0-1.451-.927,38.687,38.687,0,0,1-7.746,2.88c-3.066.511-8.686,1.533-10.73,6.642-2.044-5.109-7.664-6.131-10.73-6.642a38.814,38.814,0,0,1-7.746-2.88,1.022,1.022,0,0,0-1.451.927V40L8.4,39.747A1.022,1.022,0,0,0,7,40.7v.119c.025.009.051.012.075.022Z" transform="translate(-1.467 0)"/>
+                  <path id="Path_1302" data-name="Path 1302" d="M49.595,49.077,27.5,58.2,5.412,49.077A1.022,1.022,0,0,0,4,50.022v.338a1.022,1.022,0,0,0,.632.945L22.755,58.79,9.825,65.924a.511.511,0,0,0,.247.959H15.25a2.044,2.044,0,0,0,.946-.232l11.307-5.9,11.307,5.9a2.044,2.044,0,0,0,.946.232h5.179a.511.511,0,0,0,.247-.959L32.251,58.79,50.375,51.3a1.022,1.022,0,0,0,.632-.945v-.338a1.022,1.022,0,0,0-1.412-.945Z" transform="translate(0 -7.249)"/>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">تحفيظ قرأن</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="saveQuran-centers.html"></a>
+          </div>
+        </li>
+        <!-- الاستقدام -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="300">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">الاستقدام</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p></a>
+          </div>
+        </li>
+        <!-- تأجير مركبات -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" >
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">تأجير مركبات</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="cars-centers.html"></a>
+          </div>
+        </li>
+        <!-- القاعات والشاليهات -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">القاعات والشاليهات</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="halls-centers.html"></a>
+          </div>
+        </li>
+        <!-- الاسر المنتجه -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">الاسر المنتجه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="family-centers.html"></a>
+          </div>
+        </li>
+        <!-- التصوير والاحتراف -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="300">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">التصوير والاحتراف</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="photography-centers.html"></a>
+          </div>
+        </li>
+        <!-- التسويق والمشاهير -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" >
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">التسويق والمشاهير</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="more" href="marketing-centers.html"></a>
+          </div>
+        </li>
+        <!-- استشارات هندسيه -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">الاستشارات الهندسيه</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="advice-centers.html"></a>
+          </div>
+        </li>
+        <!-- المكتبات والخدمات -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">المكتبات والخدمات</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="office-centers.html"></a>
+          </div>
+        </li>
+        <!-- الشحن -->
+        <li class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="300">
+          <div class="service">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.23" height="83.676" viewBox="0 0 95.23 83.676">
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#ffd10a"/>
+                  <stop offset="0.048" stop-color="#ffd00c"/>
+                  <stop offset="1" stop-color="#fec23c"/>
+                </linearGradient>
+              </defs>
+              <g id="Group_69292" data-name="Group 69292" class="cls-1" transform="translate(-1648 -1496)">
+                <g id="Group_7" data-name="Group 7" class="cls-1" transform="translate(1648 1496)">
+                  <path id="Rectangle_21" data-name="Rectangle 21" class="cls-2" d="M46.953,3.581c25.721,0,43.509,4.722,43.509,30.442s-.427,53.234-26.148,53.234c-11.111,0-30.324-5.111-43.467-16.479S-4.767,55.913-4.767,41.3C-4.767,15.583,21.232,3.581,46.953,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="Group_7-2" data-name="Group 7" transform="translate(1661 1506)">
+                  <path id="Rectangle_21-2" data-name="Rectangle 21" class="cls-2" d="M33.542,3.581c19.051,0,32.227,3.5,32.227,22.549S65.453,65.56,46.4,65.56c-8.23,0-22.461-3.786-32.2-12.206S-4.767,42.343-4.767,31.522C-4.767,12.471,14.49,3.581,33.542,3.581Z" transform="translate(4.767 -3.581)"/>
+                </g>
+                <g id="svgexport-6_87_" data-name="svgexport-6 (87)" transform="translate(1672.63 1522)">
+                  <g id="Group_68132" data-name="Group 68132" transform="translate(12.37 0)">
+                    <g id="Group_68131" data-name="Group 68131" transform="translate(0 0)">
+                      <path id="Path_1303" data-name="Path 1303" d="M120.508,14.5h.075c6.511-.069,5.563-8.756,5.563-8.756-.268-5.806-5.126-5.756-5.6-5.738-.48-.019-5.338-.069-5.6,5.738C114.945,5.734,114,14.428,120.508,14.5Z" transform="translate(-108.503 0)"/>
+                      <path id="Path_1304" data-name="Path 1304" d="M35.483,244.081a4.089,4.089,0,0,0-2.145-1.565,26.949,26.949,0,0,1-4.709-2.276l-2.27,7.172-.312.973L25.03,245.5c2.332-3.255-.175-3.411-.611-3.418h-.025c-.437.006-2.944.156-.611,3.418l-1.017,2.881-.312-.973-2.27-7.172a26.949,26.949,0,0,1-4.709,2.276c-3.243,1.179-3.043,3.848-3.106,8.85H29.564c-.019-.212-.031-.424-.031-.642A6.7,6.7,0,0,1,35.483,244.081Z" transform="translate(-12.37 -225.256)"/>
+                      <path id="Path_1305" data-name="Path 1305" d="M322.378,329.939a4.9,4.9,0,1,0,4.9,4.9A4.908,4.908,0,0,0,322.378,329.939Zm2.395,5.569h-1.728v1.728h-1.328v-1.728H319.99V334.18h1.728v-1.728h1.328v1.728h1.728Z" transform="translate(-298.442 -309.362)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h6 class="mt-3 fw-bold">الشحن</h6>
+            <p class="cut-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة للتصميم ويقول البعض ان وضع
+            </p>
+            <a class="link" href="freight-centers.html"></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!------------- footer -------------->
+  <footer>
+    <!-- navigation -->
+    <div class="navbar navbar-expand-lg">
+      <div class="container align-items-center">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="services.html">الخدمات</a>
+          </li>
+        </ul>
+        <a class="navbar-brand m-0" href="index.html"><img src="images/logo2.png" alt=""></a>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              المعرض
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+              <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">المدونة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">تواصل معنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- nested footer -->
+    <div class="sub-footer">
+      <div class="container">
+        <a href="https://smartvision4p.com" target="_blank" class="link"></a>
+        <p class="text-center mb-0">&copy;
+          جميع الحقوق محفوظه لموقع سمارت فيجن للتصميم المواقع والتطبيقات
+        </p>
+        <img src="images/logooo.png" alt="">
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery script -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- lottiefiles script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- owl-carousel script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- rateyo script -->
+  <script src="js/jquery.rateyo.min.js"></script>
+
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <!-- nice select script -->
+  <script src="js/jquery.nice-select.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

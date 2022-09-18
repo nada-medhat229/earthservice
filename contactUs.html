@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>earth services</title>
+  <link rel="icon" href="images/logo.png">
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- owl-carousel link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- aos link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- custom css AR file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- custom css EN file link  -->
+  <!-- <link rel="stylesheet" href="css/style-En.css"> -->
+
+</head>
+<body>
+
+<!------------- nav section -------------->
+
+<!-- nav @ max width 992 -->
+  <!-- if auth -->
+  <div class="min-nav col-xs-12">
+    <a href="profile.html">
+      <i class="bi bi-person"></i>
+    </a>
+    <a class="" href="notif.html">
+      <i class="bi bi-bell"></i>
+      <span class="count">0</span>
+    </a>
+    <a href="cart.html">
+      <i class="bi bi-cart"></i>
+      <span class="count">1</span>
+    </a>
+  </div>
+<!-- else -->
+<div class="min-nav d-none col-xs-12">
+  <a href="login.html">
+     تسجيل دخول
+  </a>
+  <a href="register.html">
+    انشاء حساب
+  </a>
+</div>
+
+<!-- nav @ min width 992 "large screen" -->
+<nav class="navbar navbar-expand-lg navbar-light top-0">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      </span>
+    </button>
+    <a class="navbar-brand m-0" href="index.html"><img src="images/logo.png" alt=""></a>
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutUs.html" class="nav-link">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link">الخدمات</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            المعرض
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+            <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">المدونة</a>
+        </li>
+        <li class="nav-item">
+          <a href="contactUs.html" class="nav-link active">تواصل معنا </a>
+        </li>
+      </ul> 
+    </div>
+    <!-- if Auth -->
+    <div class="icons show-lg">
+      <div class="icon">
+        <a href="profile.html">
+          <i class="bi bi-person"></i>
+        </a>
+      </div>
+      <div class="icon has-menu">
+        <a href="notif.html">
+          <i class="bi bi-bell"></i>
+        </a>
+        <div class="sub-menu">
+          <div class="notification">
+            <div class="notifi row gx-0 justify-content-between align-items-center">
+              <a class="link" href="notif.html"></a>
+              <p class="cut-text px-3">
+                وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+              </p>
+            </div>
+            <div class="notifi row gx-0 justify-content-between align-items-center">
+              <a class="link" href="notif.html"></a>
+              <p class="cut-text px-3">
+                وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+              </p>
+            </div>
+          </div>
+        </div>
+        <span class="count"></span>
+      </div>
+      <div class="icon">
+        <a href="cart.html">
+          <i class="bi bi-cart"></i>
+        </a>
+        <span class="count">1</span>
+      </div>
+    </div>
+    
+    <!-- else -->
+    <div class="login d-none show-lg">
+      <a class="" href="login.html">تسجيل دخول</a>
+      <a class="btn rounded-pill m-0 main-btn" href="register.html">انشاء حساب</a>
+    </div>
+  </div>
+</nav>
+
+<!------------- breadcrumb -------------->
+<section class="">
+  <div class="container">
+    <div class="breadcrumb-container" style="background:url(images//breadcrumb/تواصل\ معنا.png)">
+      <div class="overlay">  
+        <div>
+          <h3 class="text-center mb-3">تواصل معنا</h3>
+          <div class="d-flex justify-content-center breadcrumb">
+            <a href="index.html" class="text-muted"> الرئيسية</a>
+            <span class="mx-2">/</span>
+            <h6 class="main-color">تواصل معنا</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!------------- contactUs -------------->
+<section class="contactUs">
+  <div class="container">
+    <div class="my-5 row gx-0 ">
+      <!-- contact form -->
+      <div class="col py-4 px-4" data-aos="fade-left" data-aos-duration="800">
+        <div class="contact-form py-4 px-4">
+          <h5  class="fs-3 fw-bold mb-3">تواصل معنا</h5>
+          <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية</p>
+          <form action="" id="formID">
+            <div class="row mt-5">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="الإسم الأول" required name="first-name">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="الإسم الثاني" required name="last-name">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="رقم الجوال" required name="phone">
+              </div>
+              <div class="col-6">
+                <input type="email" class="form-control" placeholder="البريد الالكتروني" required name="emil">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="اكتب رسالتك هنا" required name="message"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn rounded-pill m-0 main-btn px-5">ارسال</button>
+          </form>
+          <div class="response"></div>
+        </div>
+      </div>
+      <!-- contact data -->
+      <div class="col-12 col-lg-3" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+        <div class="contact-data py-4">
+          <div class="bg-main-color h-100 pt-3 px-4">
+            <div class="contact-info mb-5 py-4">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:Admin@domain.com">Admin@domain.com</a>
+                </li>
+                
+                <li>
+                  <i class="fa-solid fa-phone-volume mt-0" style="transform: rotate(-45deg) ;"></i>
+                  <a href="tel:966 5326 3256355" >966 5326 3256355</a>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-phone-volume mt-0" style="transform: rotate(-45deg) ;"></i>
+                  <a href="tel:966 5326 3256355" >966 5326 3256355</a>
+                </li>
+                
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="">حفر الباطن ,, السعودية المملكة العربية السعودية</a>
+                </li>
+              </ul>
+            </div>
+            <!-- social -->
+            <div class="social">
+              <div><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+              <div><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+              <div><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+              <div><a href="https://wa.me/201019036310" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<iframe class="pb-5"  style="height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.702092825318!2d31.36634798538166!3d31.034548678075808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d99ef7ea253%3A0xe92319f27469b714!2z2LPZhdin2LHYqiDZgdmK2KzZhiDZhNiq2LXZhdmK2YUg2YjYqNix2YXYrNipINin2YTZhdmI2KfZgti5INmI2KfZhNiq2LfYqNmK2YLYp9iqINmI2KfZhNmF2KrYp9is2LEg2KfZhNin2YTZg9iq2LHZiNmG2YrYqQ!5e0!3m2!1sar!2seg!4v1661681153606!5m2!1sar!2seg" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<!------------- footer -------------->
+<footer>
+  <!-- navigation -->
+  <div class="navbar navbar-expand-lg">
+    <div class="container align-items-center">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">الخدمات</a>
+        </li>
+      </ul>
+      <a class="navbar-brand m-0" href="index.html"><img src="images/logo2.png" alt=""></a>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            المعرض
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">معرض الصور</a></li>
+            <li><a class="dropdown-item" href="video.html">معرض الفيديو</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">المدونة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contactUs.html">تواصل معنا</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- nested footer -->
+  <div class="sub-footer">
+    <div class="container">
+      <a href="https://smartvision4p.com" target="_blank" class="link"></a>
+      <p class="text-center mb-0">&copy; 
+      جميع الحقوق محفوظه لموقع سمارت فيجن للتصميم المواقع والتطبيقات
+         </p>
+      <img src="images/logooo.png" alt="">
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- jQuery script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- lottiefiles script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- owl-carousel script -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- bootstrap script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- rateyo script -->
+<script src="js/jquery.rateyo.min.js"></script>
+
+<!-- aos script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- nice select script -->
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
